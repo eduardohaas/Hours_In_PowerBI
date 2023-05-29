@@ -1,4 +1,4 @@
-##English 
+<h1 align="center">English</h1>
 
 To work with hours in DAX, we face some difficulties, but it is possible to work using decimal conversion.
 
@@ -40,7 +40,7 @@ Remember to change the format of the upper part to 00:00:00
 Then we will have the result
 ![image](https://github.com/eduardohaas/Hours_In_PowerBI/assets/84861180/563843e3-9334-4aef-bff0-37a856eaa000)
 
-##Portugues
+<h1 align="center">Português</h1>
 
 Para tabalhar com horas em dax, temos algumas dificuldades, porem é possivel trabalhar utilizando a conversão de decimais. 
 
