@@ -1,4 +1,5 @@
 ##English 
+
 To work with hours in DAX, we face some difficulties, but it is possible to work using decimal conversion.
 
 To do so, we must follow the following steps:
@@ -40,6 +41,7 @@ Then we will have the result
 ![image](https://github.com/eduardohaas/Hours_In_PowerBI/assets/84861180/563843e3-9334-4aef-bff0-37a856eaa000)
 
 ##Portugues
+
 Para tabalhar com horas em dax, temos algumas dificuldades, porem é possivel trabalhar utilizando a conversão de decimais. 
 
 Para fazer devemos seguir os seguintes passos: 
