@@ -5,7 +5,8 @@ To work with hours in DAX, we face some difficulties, but it is possible to work
 To do so, we must follow the following steps:
 
 Load the dataset and create a column that calculates the difference between the desired periods.
-Example: ```ruby
+Example: 
+```ruby
 Diff = Records[Departure_DateTime] - Records[Entry_DateTime]
 ```
 
