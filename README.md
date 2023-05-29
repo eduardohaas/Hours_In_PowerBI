@@ -15,7 +15,8 @@ Example: '01_Total_Hours_(Decimal) = SUM(Records[Decimal])'
 
 Having these values, we need to use the following measure that converts this decimal to the H.H.T. format.
 Example:
-'02_Convert_Hours (hh:mm:ss) =
+```ruby
+02_Convert_Hours (hh:mm:ss) =
 VAR vDecimalHours = [01_Total_Hours_(Decimal)]
 VAR vHours =
     INT ( vDecimalHours )
@@ -33,7 +34,7 @@ VAR vSS =
 VAR vResult = vHH & ":" & vMM & ":" & vSS
 RETURN
     CONVERT ( vHH & vMM & vSS, INTEGER )
-'
+```
 Remember to change the format of the upper part to 00:00:00
 ![image](https://github.com/eduardohaas/Hours_In_PowerBI/assets/84861180/40322295-b069-4037-82cd-992b8f1eb98f)
 
@@ -57,7 +58,7 @@ Exemplo: '01_Total_Horas_(Decimal) = SUM(Registros[Decimal])'
 
 Tendo estes valores, precisamos utilizar a seguinte medida que realiza a conversão deste decimal para o modelo H.H.T.
 Exemplo: 
-'
+```ruby
 02_Convert_Horas (hh:mm:ss) =
 VAR vHorasDecimal = [01_Total_Horas_(Decimal)]
 VAR vHoras =
@@ -76,7 +77,7 @@ VAR vSS =
 VAR vResultado = vHH & ":" & vMM & ":" & vSS
 RETURN
     CONVERT ( vHh & vMm & vSS, INTEGER )
-'
+```
 
 Lembre-se de Muda o formato da parte superior para 00:00:00
 ![image](https://github.com/eduardohaas/Hours_In_PowerBI/assets/84861180/40322295-b069-4037-82cd-992b8f1eb98f)
