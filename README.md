@@ -5,13 +5,21 @@ To work with hours in DAX, we face some difficulties, but it is possible to work
 To do so, we must follow the following steps:
 
 Load the dataset and create a column that calculates the difference between the desired periods.
-Example: 'Diff = Records[Departure_DateTime] - Records[Entry_DateTime]'
+Example: ```ruby
+Diff = Records[Departure_DateTime] - Records[Entry_DateTime]
+```
 
 Next, we need to convert this column to decimal by multiplying the column by 24.
-Example: 'Decimal = Records[Diff] * 24'
+Example: 
+```ruby
+Decimal = Records[Diff] * 24
+```
 
 Then, we start taking measurements. First, we calculate the sum of these decimal values.
-Example: '01_Total_Hours_(Decimal) = SUM(Records[Decimal])'
+Example: 
+```ruby
+01_Total_Hours_(Decimal) = SUM(Records[Decimal])
+```
 
 Having these values, we need to use the following measure that converts this decimal to the H.H.T. format.
 Example:
@@ -48,13 +56,22 @@ Para tabalhar com horas em dax, temos algumas dificuldades, porem é possivel tr
 Para fazer devemos seguir os seguintes passos: 
 
 Carregar o Data_SET e criar uma coluna que realize a diferença entra o periodo desejado
-Exemplo: 'Dif = Registros[Data_Hora_Saida]-Registros[Data_Hora_Entrada]'
+Exemplo: 
+```ruby
+Dif = Registros[Data_Hora_Saida]-Registros[Data_Hora_Entrada]
+```
 
 Porterior devemos converter esta coluna para decimal realizando a multiplicação da coluna por 24 
-Exemplo : 'Decimal = Registros[Dif]*24'
+Exemplo : 
+```ruby
+Decimal = Registros[Dif]*24
+```
 
 Posterior começamos a realizar as medidas, primeiro realizamos a soma destes valores decimais
-Exemplo: '01_Total_Horas_(Decimal) = SUM(Registros[Decimal])'
+Exemplo: 
+```ruby
+01_Total_Horas_(Decimal) = SUM(Registros[Decimal])
+```
 
 Tendo estes valores, precisamos utilizar a seguinte medida que realiza a conversão deste decimal para o modelo H.H.T.
 Exemplo: 
